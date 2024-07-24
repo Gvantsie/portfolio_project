@@ -1,5 +1,5 @@
 from django.contrib import admin
-from main.models import Education, Experience, Project, Skill
+from portfolio.models import Education, Experience, Project, Skill
 
 
 # Register your models here.

@@ -22,5 +22,5 @@ from portfolio_project import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', include('main.urls')),
+    path('portfolio/', include('portfolio.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
