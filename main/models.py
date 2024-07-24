@@ -20,6 +20,7 @@ class Education(models.Model):
         verbose_name_plural = _('Educations')
 
 
+################################################################################################
 class Experience(models.Model):
     title = models.CharField(max_length=100, verbose_name=_('Title'))
     company = models.CharField(max_length=100, verbose_name=_('Company'))
@@ -35,6 +36,7 @@ class Experience(models.Model):
         verbose_name_plural = _('Experiences')
 
 
+################################################################################################
 class Project(models.Model):
     title = models.CharField(max_length=200, verbose_name=_('Project Title'))
     description = models.TextField(verbose_name=_('Project Description'))
@@ -51,6 +53,7 @@ class Project(models.Model):
         verbose_name_plural = _('Projects')
 
 
+################################################################################################
 class Skill(models.Model):
     name = models.CharField(max_length=100, verbose_name=_('Skill Name'))
     # GenericForeignKey setup for Skill model to be able to link to any other model
